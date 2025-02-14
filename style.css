@@ -1,15 +1,16 @@
+/* Library-Themed Portfolio CSS */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 body {
 	font-family: 'Merriweather', serif;
-	background-color: #f5ebe0;
-	color: #3e2723;
+	background-color: #f5ebe0; 
+	color: #3e2723; 
 	margin: 0;
 	padding: 0;
 }
 
 nav {
-	background-color: #8d6e63;
+	background-color: #8d6e63; 
 	padding: 15px;
 	display: flex;
 	justify-content: space-between;
@@ -45,7 +46,6 @@ nav {
 			border-radius: 5px;
 		}
 
-/* Dropdown Menu */
 .dropdown-menu {
 	display: none;
 	position: absolute;
@@ -89,6 +89,80 @@ nav {
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 	width: 250px;
 }
+
+
+.about-section {
+	text-align: center;
+	padding: 50px;
+}
+
+.profile-pic {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #6d4c41;
+	margin-bottom: 20px;
+}
+
+
+.contact-section {
+	text-align: center;
+	padding: 50px;
+	background-color: #efe8dc;
+	border-radius: 10px;
+	width: 80%;
+	margin: 30px auto;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.contact-info, .contact-form {
+	flex: 1;
+	padding: 20px;
+	text-align: left;
+}
+
+	.contact-info h3, .contact-form h3 {
+		color: #6d4c41;
+	}
+
+	.contact-form label {
+		display: block;
+		margin-top: 10px;
+		font-weight: bold;
+	}
+
+	.contact-form input, .contact-form textarea {
+		width: 100%;
+		padding: 8px;
+		margin-top: 5px;
+		border: 1px solid #6d4c41;
+		border-radius: 5px;
+		background-color: #f5ebe0;
+	}
+
+	.contact-form button {
+		margin-top: 15px;
+		background-color: #8d6e63;
+		color: #fff8e1;
+		border: none;
+		padding: 10px 15px;
+		cursor: pointer;
+		font-size: 16px;
+		border-radius: 5px;
+		transition: 0.3s;
+	}
+
+		.contact-form button:hover {
+			background-color: #6d4c41;
+		}
 
 footer {
 	background-color: #8d6e63;
